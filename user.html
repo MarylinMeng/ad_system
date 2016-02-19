@@ -1,0 +1,325 @@
+
+<!Doctype html>
+<html>
+<head>
+    <meta charset=utf8 />
+    <title>Index</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap_override.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/user.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="dialog">
+       <div class="modal" id="addUserModalId">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center"><strong>添加新用户</strong></h3>
+            </div>
+                <div class="modal-body">
+                <div class="alert" style="display:none;" id="reportMessageId"></div>
+                    <form>
+                        <div class="form-group">
+                            <label for="reportTitleId">用户名：</label>
+                            <input type="text" class="form-control" id="reportTitleId" />
+                        </div>
+                        <div class="form-group">
+                            <label for="reportTitleId">邮箱：</label>
+                            <input type="text" class="form-control" id="reportTitleId" />
+                        </div>
+                        <div class="form-group">
+                            <label for="reportTitleId">联系电话：</label>
+                            <input type="text" class="form-control" id="reportTitleId" />
+                        </div>
+                        <div class="form-group">
+                            <label for="reportTitleId">网站：</label>
+                            <input type="text" class="form-control" id="reportTitleId" />
+                        </div>
+                        <div class="form-group">
+                            <label for="reportTitleId">地址：</label>
+                            <input type="text" class="form-control" id="reportTitleId" />
+                        </div>
+                        <div class="form-group">
+                            <label for="reportContentId">自我简介：<small>（*不得多于140字）</small></label>
+                            <textarea rows="5" id="reportContentId" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="button" class="btn btn-success" id="submitReportBtnId" value="添加" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <header class="nav navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menuTogglerId">
+                <span class="sr-only">Tool</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand logo"><img src="images/logo.png" /></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+            <li class="hidden-xs hidden-sm">
+                <input class="search" type="text" />
+            </li>
+            <li class="notification-dropdown hidden-xs hidden-sm">
+                <a href="#" class="trigger">
+                    <i class="glyphicon glyphicon-warning-sign"></i>
+                    <span class="count">43</span>
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <div class="body">
+                        <a href="#" class="close-icon"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                        <div class="notifications">
+                            <h3>你有19条未读信息</h3>
+                            <a href="#" class="item">
+                                <i class="glyphicon glyphicon-log-in"></i>
+                                <span>新用户注册</span>
+                                <span class="time"><i class="glyphicon glyphicon-time"></i><span>11 min</span></span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                                <span>xxx发来的消息</span>
+                                <span class="time"><i class="glyphicon glyphicon-time"></i><span>11 min</span></span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="glyphicon glyphicon-log-in"></i>
+                                <span>新建的策略需要审核新建的策略需要审核新建的策略需要审核</span>
+                                <span class="time"><i class="glyphicon glyphicon-time"></i><span>11 min</span></span>
+                            </a>
+                            <a href="#" class="item">
+                                <i class="glyphicon glyphicon-save"></i>
+                                <span>新回答</span>
+                                <span class="time"><i class="glyphicon glyphicon-time"></i><span>11 min</span></span>
+                            </a>
+                            <div class="footer">
+                                <a href="#" class="see_more">View all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="notification-dropdown hidden-xs hidden-sm">
+                <a href="#" class="trigger">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    <span class="count">2</span>
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        <div class="arrow_border">
+                            <a href="#" class="close-icon"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                            <div class="messages">
+                                <a href="#" class="item">
+                                    <img src="" class="display" />
+                                    <div class="name">Marllin</div>
+                                    <div class="msg">审核新建的策略需要审核新建的策略需要审核</div>
+                                    <span class="time"><i class="glyphicon glyphicon-time"></i><span>11 min</span></span>
+                                </a>
+                                <a href="#" class="item last">
+                                    <img src="images/userlogo.png" class="display" />
+                                    <div class="name">Marllin</div>
+                                    <div class="msg">审核新建的策略需要审核新建的策略需要审核</div>
+                                    <span class="time"><i class="glyphicon glyphicon-time"></i><span>11 min</span></span>
+                                </a>
+                                <div class="footer"><a href="#" class="see_more">View all messages</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+            </li>
+            <!--
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle hidden-sx hidden-sm" data-toggle="dropdown">用户<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">修改头像</a></li>
+                            <li><a href="#">个人资料</a></li>
+                            <li><a href="#">账户信息</a></li>
+                            <li><a href="#">导出数据</a></li>
+                            <li><a href="#">注销</a></li>
+                        </ul>
+                    </li>
+            -->
+            <li class="settings hidden-xs hidden-sm">
+                <a href="#" role="button"><i class="glyphicon glyphicon-cog"></i></a>
+            </li>
+        </ul>
+    </header>
+    <div class="main row">
+        <div class="slider col-sm-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="userinfo">
+                    <div class="about_user">
+                        <a href="javascript:void(0)" class="user_logo hidden-sm hidden-xs"><img id="userLogoId" src="images/userlogo.png" /></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <h5 class="user_name" id="userNameId">梦令布孑<i class="caret"></i></h5>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">修改头像</a></li>
+                            <li><a href="#">个人资料</a></li>
+                            <li><a href="#">账户信息</a></li>
+                            <li><a href="#">导出数据</a></li>
+                            <li><a href="#">注销</a></li>
+                        </ul>
+                        <!-- 					<a href="javascript:void(0)" id="navLoginBtnId" class="btn" ><i class="glyphicon glyphicon-share-alt"></i></a>-->
+                    </div>
+                </li>
+                <li><a href="index.html"><i class="glyphicon glyphicon-stats"></i><span>统计</span></a></li>
+                <li class="current">
+                    <div class="pointer">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <a href="#" class="dropdown-toggle" id="navUserBtnId">
+                        <i class="glyphicon glyphicon-user" style="margin-left:12px;"></i><span>用户</span>
+                        <i class="glyphicon glyphicon-chevron-down dropdown_icon"></i>
+                        <ul class="submenu" id="userSubMenuId">
+                            <li><a href="user.html">用户列表</a></li>
+                            <li><a href="profile.html">用户信息</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i><span>订单</span></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-tasks"></i><span>运营</span></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-phone-alt"></i><span>客服</span></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-usd"></i><span>财务</span></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-cog"></i><span>系统</span></a></li>
+            </ul>
+        </div>
+        <div class="content col-sm-10">
+            <h3><strong>用户列表</strong></h3>
+            <div class="user_form"></div>
+            <div class="user_head">
+                <input class="form-control" placeholder="Search for user...." type="search" />
+                <button class="btn btn-success" id="addUserBtnId"><i class="glyphicon glyphicon-plus"></i>新用户</button>
+            </div>
+            <div class="row user_list">
+                <div class="col-md-12">
+                <style type="text/css">
+                table td{font-size:13px;}
+                table th i.line{position:absolute;top:0;left:-8px;border-left:1px solid #dee3ea;height:10px;}
+                table .username{color:#3389d1;display:block;font-weight:600;font-size:14px;margin:15px 0 0 0;}
+                table .userlogo{float:left;margin-right:14px;max-width:45px;position:relative;top:8px;}
+                table .usersubtext{font-size:12px;margin-left:0;color:#778391;font-style:italic;margin-top:0;}
+                </style>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="col-md-4 sortable">Name</th>
+                            <th class="col-md-3 sortable"><i class="line"></i>Signed up</th>
+                            <th class="col-md-2 sortable"><i class="line"></i>Total spent</th>
+                            <th class="col-md-3 sortable"><i class="line"></i>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                                <a href="#" class="username">Marylin</a>
+                                <span class="usersubtext">Graphic Design</span>
+                            </td>
+                            <td>Mar 1, 2015</td>
+                            <td>$45,000,000</td>
+                            <td><a href="#">menglingbujie@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                                <a href="#" class="username">Marylin</a>
+                                <span class="usersubtext">Graphic Design</span>
+                            </td>
+                            <td>Mar 1, 2015</td>
+                            <td>$45,000,000</td>
+                            <td><a href="#">menglingbujie@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                                <a href="#" class="username">Marylin</a>
+                                <span class="usersubtext">Graphic Design</span>
+                            </td>
+                            <td>Mar 1, 2015</td>
+                            <td>$45,000,000</td>
+                            <td><a href="#">menglingbujie@gmail.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <!-- <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="userlogo"><img class="img-circle" src="images/userlogo.png" /></div>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <!--
+    <script src="resources/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
+    -->
+    <script src="resources/js/sea.js" type="text/javascript"></script>
+    <script type="text/javascript">
+seajs.config({
+	alias:{
+		"echart":"libs/echarts-all.js",
+		"jquery":"libs/jquery-1.11.2.min.js",
+		"bootstrap":"libs/bootstrap.min.js",
+	},
+	paths:{
+		libs:"./resources/js",
+		tools:"./libs",
+		chart:"./resources/js/chart",
+	},
+	preload:[
+	],
+	base:"",
+	charset:"utf-8",
+})
+</script>
+<script type="text/javascript">
+seajs.use(["jquery","echart"],function(jq){
+seajs.use("bootstrap");
+	$(function () {
+	    initEvents();
+	})
+})
+</script>
+<script type="text/javascript">
+function initEvents() {
+    $("#navUserBtnId").on("click", function () {
+        $("#userSubMenuId").slideToggle(500);
+    })
+
+    $("#addUserBtnId").on("click",function(){
+        $("#addUserModalId").modal("show");
+    })
+}
+</script>
+</body>
+</html>
